@@ -1,16 +1,13 @@
 import { useEffect } from 'react';
 import { useProductStore } from '../stores/product.store';
-import { useAuthStore } from '../stores/auth.store';
 import ProductCard from '../components/ProductCard';
 import Loader from '../components/Loader';
 
 export default function Home() {
   const { products, fetchProducts, isLoading } = useProductStore();
-  const { fetchProfile, user } = useAuthStore();
 
   useEffect(() => {
     fetchProducts();
-    if (!user) fetchProfile();
   }, []);
 
   return (

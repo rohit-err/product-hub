@@ -1,16 +1,11 @@
-import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuthStore } from '../stores/auth.store';
 import { Routes } from '../types';
 import Loader from '../components/Loader';
 
 export default function Profile() {
-  const { user, fetchProfile, logout } = useAuthStore();
+  const { user, logout } = useAuthStore();
   const navigate = useNavigate();
-
-  useEffect(() => {
-    if (!user) fetchProfile();
-  }, []);
 
   const handleLogout = () => {
     logout();
