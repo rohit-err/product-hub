@@ -53,18 +53,15 @@ export default function AddProduct() {
           </div>
 
           <div className="flex flex-col gap-1">
-            <label className="text-xs font-medium text-on-surface-variant uppercase tracking-wider">Product Price</label>
-            <div className="relative">
-              <span className="absolute left-4 top-1/2 -translate-y-1/2 text-sm text-on-surface-variant">$</span>
-              <input
-                type="number"
-                step="0.01"
-                value={form.price}
-                onChange={(e) => update('price', e.target.value)}
-                placeholder="0.00"
-                className="input-base pl-8"
-              />
-            </div>
+            <label className="text-xs font-medium text-on-surface-variant uppercase tracking-wider">Product Price ($)</label>
+            <input
+              type="number"
+              step="0.01"
+              value={form.price}
+              onChange={(e) => update('price', e.target.value)}
+              placeholder="0.00"
+              className="input-base"
+            />
           </div>
 
           <div className="flex flex-col gap-1">
