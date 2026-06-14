@@ -10,7 +10,7 @@ A full-stack web application with authentication, product management, and liked 
 ## Test Credentials
 
 ```
-Email: testts@example.com
+Email: test@example.com
 Password: password123
 ```
 
