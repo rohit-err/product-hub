@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --font-inter: "Inter", sans-serif;
+
+  --color-primary: #00000b;
+  --color-primary-container: #1a1a2e;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #83829b;
+  --color-secondary-fixed: #ffe08f;
+  --color-secondary-fixed-dim: #e6c364;
+  --color-gold: #c9a84c;
+  --color-surface: #f9f9ff;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container: #e7eefe;
+  --color-surface-variant: #dce2f3;
+  --color-outline: #78767d;
+  --color-outline-variant: #c8c5cd;
+  --color-on-surface: #151c27;
+  --color-on-surface-variant: #47464c;
+  --color-on-background: #151c27;
+  --color-error: #ba1a1a;
+  --color-error-container: #ffdad6;
+  --color-background: #f7f8fa;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-inter);
+  background-color: var(--color-background);
+  color: var(--color-on-surface);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Reusable input styles */
+.input-base {
+  @apply w-full h-12 px-4 border border-outline-variant rounded-lg bg-surface-container-lowest text-on-surface text-sm transition-all outline-none focus:border-primary-container focus:ring-2 focus:ring-primary-container/10;
+}
+
+/* Primary button */
+.btn-primary {
+  @apply w-full h-12 bg-primary-container text-gold font-medium text-sm rounded-lg hover:bg-primary-container/90 transition-colors flex items-center justify-center cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+/* Card shadow */
+.card-shadow {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+}
