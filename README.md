@@ -4,8 +4,8 @@ A full-stack web application with authentication, product management, and liked 
 
 ## Live Demo
 
-- **Frontend:** [https://product-hub-frontend.vercel.app](https://product-hub-frontend.vercel.app)
-- **Backend:** [https://product-hub-backend.onrender.com](https://product-hub-backend.onrender.com)
+- **Frontend:** [https://product-hub-blond.vercel.app](https://product-hub-blond.vercel.app)
+- **Backend:** [https://product-hub-r3mc.onrender.com](https://product-hub-r3mc.onrender.com)
 
 ## Test Credentials
 
